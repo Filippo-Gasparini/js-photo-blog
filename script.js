@@ -19,9 +19,10 @@ for (let i = 0; i < n; i++)
         console.log(post)
 
         postCards.innerHTML +=
-         `<li>${post.title}</li>
-         <img src="${post.url}" alt="${post.title}" />
-         <li>${post.albumId}
+         `<li> ${post.title}
+            <img src="${post.url}" alt="${post.title}">
+            Album ID: ${post.albumId} 
+        </li>
          `;
       
         
