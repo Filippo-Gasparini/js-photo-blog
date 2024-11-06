@@ -3,7 +3,7 @@ console.log('posts')
 
 
 
-const postCards = document.querySelector('li') 
+const postCards = document.querySelector('#photo-list') 
 
 function fetchPhotos( n = 6) {  
 for (let i = 0; i < n; i++)
@@ -18,7 +18,12 @@ for (let i = 0; i < n; i++)
         
         console.log(post)
 
-        postCards.innerHTML += `<li>${post}</li>`
+        postCards.innerHTML +=
+         `<li>${post.title}</li>
+         <img src="${post.url}" alt="${post.title}" />
+         <li>${post.albumId}
+         `;
+      
         
     })
 
@@ -38,17 +43,12 @@ for (let i = 0; i < n; i++)
 
  
 
- post.forEach((post) => {
-    
-    console.log(post)
-    const body = res.id
-    const title = res.title
-    console.log(body, title)
+ 
 
 
 
     
- })
+
     
 
 
