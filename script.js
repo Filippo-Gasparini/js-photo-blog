@@ -3,32 +3,61 @@ console.log('posts')
 
 
 
-const postCards = document.querySelector('card') 
+const postCards = document.querySelector('li') 
 
 function fetchPhotos( n = 6) {  
 for (let i = 0; i < n; i++)
+
     axios
+
     .get('https://jsonplaceholder.typicode.com/photos?_limit=6')
+
     .then ((res) => {
+
         const post = res.data
+        
         console.log(post)
-        //appendPost (post, postCards)
-        //console.log(appendPost) 
+
+        postCards.innerHTML += `<li>${post}</li>`
+        
     })
+
     .catch ((err) => {
+
         console.log(err)
+
     }) 
 }
 
 
 
-const foto = fetchPhotos() 
+ fetchPhotos() 
 
 
-/*function appendPost(){
+
+
+ 
+
+ post.forEach((post) => {
+    
     console.log(post)
+    const body = res.id
+    const title = res.title
+    console.log(body, title)
 
-    postCards.forEach((post) => {
-        console.log(postCards)
-    })
-}/** */
+
+
+    
+ })
+    
+
+
+
+
+    
+    
+
+
+
+
+
