@@ -1,0 +1,33 @@
+.header-container {
+    max-width: 100%;
+    margin: 0, auto;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+margin-top: -70px;
+background-image: url('./img/wall.png');
+background-repeat: no-repeat;
+color: #000000;
+font-size: 170%;
+line-height: 200px;
+text-align: center;
+width: 2000px;
+height: 220px;
+
+}
+
+
+.posts-container {
+    background-image: url('./img/cork.png');
+    height: 1000px;
+    margin-top: -30px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+

@@ -3,6 +3,19 @@ console.log('posts')
 
 
 
-const url = 'https://jsonplaceholder.typicode.com/photos?_limit=6'
+const postCards = document.querySelector('posts') 
 
-console.log(url)
+function fetchPhotos(root, n = 6) {  
+for (let i = 0; i <= n; i++)
+    axios
+    .get('https://jsonplaceholder.typicode.com/photos?_limit=6')
+    .then ((res) => {
+        console.log(res.data)
+    })
+    .catch ((err)=> {
+        console.log(err)
+    }) 
+}
+
+
+//fetchPhotos(postCards)
