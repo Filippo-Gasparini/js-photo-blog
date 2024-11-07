@@ -14,7 +14,7 @@ function fetchPhotos() {
             posts.forEach((post) => {
                 postCards.innerHTML +=
                 `
-                    <div class="col">
+                    <div class="card">
                         <div class="image">
                             <img src="${post.url}">
                         </div>
