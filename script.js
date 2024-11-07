@@ -1,54 +1,42 @@
 console.log('posts')
+const postCards = document.querySelector('#photo-list .row')
+console.log(postCards);
 
-
-
-
-const postCards = document.querySelector('#photolist') 
-
-function fetchPhotos( n = 6) {  
-for (let i = 0; i < n; i++)
-
+function fetchPhotos() {
     axios
+        .get('https://jsonplaceholder.typicode.com/photos?_limit=6')
+        .then((res) => {
 
-    .get('https://jsonplaceholder.typicode.com/photos?_limit=6')
+            const posts = res.data
 
-    .then ((res) => {
+            console.log(posts)
 
-        const post = res.data
-        
-        console.log(post)
-
-        postCards.innerHTML +=
-         ` <div id="photo-list">
-                <div class="row">
+            posts.forEach((post) => {
+                postCards.innerHTML +=
+                `
                     <div class="col">
                         <div class="image">
-                            <img src="${url}">
+                            <img src="${post.url}">
                         </div>
                         <p class="title-card">${post.title}
                         </p>
-                    <div class="pin">
-                        <img src="./img/pin.svg">
+                        <div class="pin">
+                            <img src="./img/pin.svg">
+                        </div>
                     </div>
-                    </div>
-                    </div>
-                </div>
-            </div>  
-         `;
-      
-        
-    })
+                `;
+            })
 
-    .catch ((err) => {
-
-        console.log(err)
-
-    }) 
+            
+        })
+        .catch((err) => {
+            console.log(err)
+        })
 }
 
 
 
- fetchPhotos() 
+fetchPhotos()
 
 
 
@@ -58,21 +46,21 @@ for (let i = 0; i < n; i++)
 
 
 
- 
-
- 
-
-
-
-    
-
-    
 
 
 
 
-    
-    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
