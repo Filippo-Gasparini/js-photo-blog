@@ -9,19 +9,28 @@
     justify-content: center;
 }
 
+
+
 .title {
-margin-top: -70px;
+margin-top:-70px;
 background-image: url('./img/wall.png');
 background-repeat: no-repeat;
 color: #000000;
 font-size: 170%;
 line-height: 200px;
 text-align: center;
-width: 2000px;
-height: 220px;
+width: 100%;
+height: 200px;
 
 }
 
+
+/*.img {
+    background-image: url('./img/cork.png');
+    background-repeat: no-repeat;
+    width: 2000px;
+    margin-top: -30px;
+}*/
 
 .posts-container {
     background-image: url('./img/cork.png');
