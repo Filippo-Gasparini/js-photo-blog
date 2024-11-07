@@ -34,15 +34,19 @@
 }
 
 .card {
-    justify-content: center;
-    width: 150px;            
+    justify-content: center;            
     border-radius: 10px;     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     overflow: hidden;        
     background-color: white; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    margin: 20px; 
-    height: 30%;
+    margin: 30px; 
+    height: 210px;
     flex-wrap: wrap;
 }
 
+.pin {
+    text-align: center;
+
+
+}
