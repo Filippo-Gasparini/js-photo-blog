@@ -76,12 +76,12 @@ fetchPhotos()
 
 // all'evento 'click' sulle cards verifico in console se risulta 
 
-postCards.forEach(image => {
-    image.addEventListener('click', (event) => {
-        console.log()
+// postCards.forEach(image => {
+//     image.addEventListener('click', (event) => {
+//         console.log()
         
-    })
-})
+//     })
+// })
 
 
 
