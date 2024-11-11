@@ -23,7 +23,6 @@
 
 .posts-container {
     background-image: url('./img/cork.png');
-    height: 500px;
     margin-top: -30px;
     margin-left: -9px;
     margin-right: -9px;
@@ -32,20 +31,30 @@
 
 .row {
     display: flex;
-}
-
-.card {
-    justify-content: center;            
-    border-radius: 10px;     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-    overflow: hidden;        
-    background-color: white; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    margin: 30px; 
-    max-height: 100%;
     flex-wrap: wrap;
 }
 
+.card {           
+    border-radius: 10px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    overflow: hidden;        
+    background-color:rgb(255, 255, 255); 
+    margin: 30px; 
+    max-height: 300px;
+    max-width: 200px;
+}
+
+.image {
+    margin-left: 25px;
+}
+
 .pin {
+    text-align: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.title-card {
     text-align: center;
 }
