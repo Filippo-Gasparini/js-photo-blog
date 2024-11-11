@@ -1,4 +1,5 @@
 console.log('posts')
+
 const postCards = document.querySelector('#photo-list .row')
 console.log(postCards);
 
@@ -16,7 +17,7 @@ function fetchPhotos() {
                 `
                     <div class="card">
                         <div class="image">
-                            <img src="${post.url}">
+                            <img src="${post.thumbnailUrl}">
                         </div>
                         <p class="title-card">${post.title}
                         </p>

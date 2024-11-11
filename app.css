@@ -12,9 +12,10 @@
     font-size: 170%;
     line-height: 200px;
     text-align: center;
-    width: 1000px;
+    width: 1270px;
     height: 200px;
-    
+    display: flex;
+    justify-content: center;
     }
 
 
@@ -41,12 +42,10 @@
     background-color: white; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     margin: 30px; 
-    height: 210px;
+    max-height: 100%;
     flex-wrap: wrap;
 }
 
 .pin {
     text-align: center;
-
-
 }
